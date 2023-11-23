@@ -7,6 +7,7 @@ router.get('/', postsController.index);
 
 // GET /posts/:id
 router.get('/:id', postsController.show);
+router.get('/:slug', postsController.show);
 
 // POST /posts
 router.post('/', postsController.store);
